@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://img.freepik.com/free-photo/top-view-crispy-fried-meat-slices-served-with-vegetable-salad_140725-7071.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://img.freepik.com/free-photo/cold-cocktails-different-colors-table_140725-9502.jpg?t=st=1713766406~exp=1713770006~hmac=8105c0194305da28aae4e0fb4994ab08902464a1c44caedf17453781b709c950&w=740" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?w=900&t=st=1713766475~exp=1713767075~hmac=a6f9ac0fda98ac1f6294ce2a9e57ae283988f00bbf1eecd434456a8edbbfd0a0" style="width:100%">
+      <div class="text"></div>
+    </div>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+  </div>
+  
+  
+  <div class="category-buttons">
+    <button class="category-btn" onclick="scrollToSection('vegMenu')">Veg</button>
+    <button class="category-btn" onclick="scrollToSection('nonVegMenu')">Non-Veg</button>
+    <button class="category-btn" onclick="scrollToSection('drinksMenu')">Drinks</button>
+    <button class="category-btn" onclick="scrollToSection('pizzaMenu')">Pizza</button>
+  </div>
+
+  <!-- Veg Section -->
+  <div class="category">
+    <h2 id="vegMenu">Veg</h2>
+    <div class="menu" id="vegMenuItems"></div>
+  </div>
+
+  <!-- Non-Veg Section -->
+  <div class="category">
+    <h2 id="nonVegMenu">Non-Veg</h2>
+    <div class="menu" id="nonVegMenuItems"></div>
+  </div>
+
+  <!-- Drinks Section -->
+  <div class="category">
+    <h2 id="drinksMenu">Drinks</h2>
+    <div class="menu" id="drinksMenuItems"></div>
+  </div>
+
+  <!-- Pizza Section -->
+  <div class="category">
+    <h2 id="pizzaMenu">Pizza</h2>
+    <div class="menu" id="pizzaMenuItems"></div>
+  </div>
+
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <span id="itemCount">0 items added</span>
+      <button id="proceedButton" class="proceed-button" style="display: none;">Proceed</button>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
